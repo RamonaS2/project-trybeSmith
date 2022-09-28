@@ -8,9 +8,9 @@ const userRouter = Router();
 const userController = new UserController();
 
 userRouter.post(
-  '/', 
-  verifyClasse, 
+  '/',  
   verifyUsername,
+  verifyClasse,
   verifyLevel, 
   verifyPassword, 
   userController.create,
